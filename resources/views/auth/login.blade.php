@@ -17,11 +17,11 @@
                                 <form method="post" action="#">
                                     @csrf
                                     <div class="mb-3">
-                                        <label class="form-label" for="email">E-posta</label>
+                                        <label class="form-label email" for="email">E-posta</label>
                                         <input class="form-control form-control-lg" id="email" type="email" name="email" placeholder="E-posta adresiniz" required autocomplete="username" />
                                     </div>
                                     <div class="mb-3">
-                                        <label class="form-label" for="password">Şifre</label>
+                                        <label class="form-label password" for="password">Şifre</label>
                                         <input class="form-control form-control-lg" id="password" type="password" name="password" placeholder="Şifreniz" required autocomplete="current-password" />
                                     </div>
                                     <div>
