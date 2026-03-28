@@ -15,6 +15,7 @@
         @yield('auth_content')
     </main>
     <script src="{{ asset('template/static/js/app.js') }}"></script>
+    <script src="{{ asset('js/auth-login.js') }}"></script>
 </body>
 
 </html>
