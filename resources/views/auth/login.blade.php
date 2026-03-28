@@ -14,11 +14,14 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="m-sm-3">
-                                <form method="post" action="#">
+                                <form method="post" action="{{ route('login') }}" id="login-form" novalidate>
                                     @csrf
+                                    @error('email')
+                                        <div class="alert alert-danger" role="alert">{{ $message }}</div>
+                                    @enderror
                                     <div class="mb-3">
                                         <label class="form-label email" for="email">E-posta</label>
-                                        <input class="form-control form-control-lg" id="email" type="email" name="email" placeholder="E-posta adresiniz" required autocomplete="username" />
+                                        <input class="form-control form-control-lg" id="email" type="email" name="email" value="{{ old('email') }}" placeholder="E-posta adresiniz" required autocomplete="username" />
                                     </div>
                                     <div class="mb-3">
                                         <label class="form-label password" for="password">Şifre</label>
