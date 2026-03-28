@@ -10,13 +10,29 @@
 	<meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link rel="shortcut icon" href="img/icons/icon-48x48.png" />
 
 	<link rel="canonical" href="https://demo-basic.adminkit.io/pages-blank.html" />
 
 	<title>Laravel CMS </title>
 	<link href="/template/static/css/app.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+	<style>
+		/* Pro kutusu sidebar-content dışına alındığında AdminKit varsayılanında taşan kısım kesiliyordu */
+		#sidebar.sidebar {
+			display: flex;
+			flex-direction: column;
+			min-height: 0;
+			overflow: hidden;
+		}
+		#sidebar .sidebar-content {
+			flex: 1 1 auto;
+			min-height: 0;
+			height: auto !important;
+		}
+		#sidebar .sidebar-cta {
+			flex: 0 0 auto;
+		}
+	</style>
 </head>
 
 <body>

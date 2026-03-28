@@ -14,7 +14,7 @@
 							</a>
 							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="alertsDropdown">
 								<div class="dropdown-menu-header">
-									4 New Notifications
+									4 yeni bildirim
 								</div>
 								<div class="list-group">
 									<a href="#" class="list-group-item">
@@ -23,9 +23,9 @@
 												<i class="text-danger" data-feather="alert-circle"></i>
 											</div>
 											<div class="col-10">
-												<div class="text-dark">Update completed</div>
-												<div class="text-muted small mt-1">Restart server 12 to complete the update.</div>
-												<div class="text-muted small mt-1">30m ago</div>
+												<div class="text-dark">Güncelleme tamamlandı</div>
+												<div class="text-muted small mt-1">Güncellemeyi bitirmek için 12 numaralı sunucuyu yeniden başlatın.</div>
+												<div class="text-muted small mt-1">30 dk önce</div>
 											</div>
 										</div>
 									</a>
@@ -35,9 +35,9 @@
 												<i class="text-warning" data-feather="bell"></i>
 											</div>
 											<div class="col-10">
-												<div class="text-dark">Lorem ipsum</div>
-												<div class="text-muted small mt-1">Aliquam ex eros, imperdiet vulputate hendrerit et.</div>
-												<div class="text-muted small mt-1">2h ago</div>
+												<div class="text-dark">Sistem uyarısı</div>
+												<div class="text-muted small mt-1">Bakım penceresi planlandı. Detaylar için tıklayın.</div>
+												<div class="text-muted small mt-1">2 saat önce</div>
 											</div>
 										</div>
 									</a>
@@ -47,8 +47,8 @@
 												<i class="text-primary" data-feather="home"></i>
 											</div>
 											<div class="col-10">
-												<div class="text-dark">Login from 192.186.1.8</div>
-												<div class="text-muted small mt-1">5h ago</div>
+												<div class="text-dark">192.186.1.8 adresinden giriş</div>
+												<div class="text-muted small mt-1">5 saat önce</div>
 											</div>
 										</div>
 									</a>
@@ -58,15 +58,15 @@
 												<i class="text-success" data-feather="user-plus"></i>
 											</div>
 											<div class="col-10">
-												<div class="text-dark">New connection</div>
-												<div class="text-muted small mt-1">Christina accepted your request.</div>
-												<div class="text-muted small mt-1">14h ago</div>
+												<div class="text-dark">Yeni bağlantı</div>
+												<div class="text-muted small mt-1">Christina isteğinizi kabul etti.</div>
+												<div class="text-muted small mt-1">14 saat önce</div>
 											</div>
 										</div>
 									</a>
 								</div>
 								<div class="dropdown-menu-footer">
-									<a href="#" class="text-muted">Show all notifications</a>
+									<a href="#" class="text-muted">Tüm bildirimleri göster</a>
 								</div>
 							</div>
 						</li>
@@ -79,7 +79,7 @@
 							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="messagesDropdown">
 								<div class="dropdown-menu-header">
 									<div class="position-relative">
-										4 New Messages
+										4 yeni mesaj
 									</div>
 								</div>
 								<div class="list-group">
@@ -90,8 +90,8 @@
 											</div>
 											<div class="col-10 ps-2">
 												<div class="text-dark">Vanessa Tucker</div>
-												<div class="text-muted small mt-1">Nam pretium turpis et arcu. Duis arcu tortor.</div>
-												<div class="text-muted small mt-1">15m ago</div>
+												<div class="text-muted small mt-1">Toplantı notlarını gönderir misiniz?</div>
+												<div class="text-muted small mt-1">15 dk önce</div>
 											</div>
 										</div>
 									</a>
@@ -102,8 +102,8 @@
 											</div>
 											<div class="col-10 ps-2">
 												<div class="text-dark">William Harris</div>
-												<div class="text-muted small mt-1">Curabitur ligula sapien euismod vitae.</div>
-												<div class="text-muted small mt-1">2h ago</div>
+												<div class="text-muted small mt-1">Taslak dosyayı inceledim, yorumlar ekledim.</div>
+												<div class="text-muted small mt-1">2 saat önce</div>
 											</div>
 										</div>
 									</a>
@@ -114,8 +114,8 @@
 											</div>
 											<div class="col-10 ps-2">
 												<div class="text-dark">Christina Mason</div>
-												<div class="text-muted small mt-1">Pellentesque auctor neque nec urna.</div>
-												<div class="text-muted small mt-1">4h ago</div>
+												<div class="text-muted small mt-1">Yarınki sunum için saat uygun mu?</div>
+												<div class="text-muted small mt-1">4 saat önce</div>
 											</div>
 										</div>
 									</a>
@@ -126,14 +126,14 @@
 											</div>
 											<div class="col-10 ps-2">
 												<div class="text-dark">Sharon Lessman</div>
-												<div class="text-muted small mt-1">Aenean tellus metus, bibendum sed, posuere ac, mattis non.</div>
-												<div class="text-muted small mt-1">5h ago</div>
+												<div class="text-muted small mt-1">Hesap özeti e-posta ile gönderildi.</div>
+												<div class="text-muted small mt-1">5 saat önce</div>
 											</div>
 										</div>
 									</a>
 								</div>
 								<div class="dropdown-menu-footer">
-									<a href="#" class="text-muted">Show all messages</a>
+									<a href="#" class="text-muted">Tüm mesajları göster</a>
 								</div>
 							</div>
 						</li>
@@ -146,11 +146,11 @@
                 <img src="https://ui-avatars.com/api/?name={{ urlencode(auth()->user()->name ?? 'User') }}&background=3b7ddd&color=fff&size=128" class="avatar img-fluid rounded me-1" alt="{{ auth()->user()->name }}" /> <span class="text-dark">{{ auth()->user()->name }}</span>
               </a>
 							<div class="dropdown-menu dropdown-menu-end">
-								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="user"></i> Profile</a>
-								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="pie-chart"></i> Analytics</a>
+								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="user"></i> Profil</a>
+								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="pie-chart"></i> İstatistikler</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="{{ route('dashboard') }}"><i class="align-middle me-1" data-feather="settings"></i> Settings & Privacy</a>
-								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="help-circle"></i> Help Center</a>
+								<a class="dropdown-item" href="{{ route('dashboard') }}"><i class="align-middle me-1" data-feather="settings"></i> Ayarlar ve gizlilik</a>
+								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="help-circle"></i> Yardım merkezi</a>
 								<div class="dropdown-divider"></div>
 								<form method="POST" action="{{ route('logout') }}">
 									@csrf
