@@ -1,10 +1,5 @@
 import axios from 'axios';
 import Swal from 'sweetalert2';
-
-/**
- * Formu AJAX ile /api/login'e gönderir; başarı/hata için SweetAlert2 kullanır.
- * Klasik POST route('login') yerine bu akış kullanılıyorsa form submit engellenir.
- */
 export class Login {
     constructor() {
         this.load();
@@ -44,7 +39,7 @@ export class Login {
                     title: 'Giriş başarılı',
                     text: data.message ?? '',
                 });
-                window.location.href = '/';
+                window.location.href = '/dashboard';
                 return;
             }
 
