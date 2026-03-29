@@ -16,6 +16,7 @@
 	<title>Laravel CMS </title>
 	<link href="/template/static/css/app.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.datatables.net/2.3.7/css/dataTables.dataTables.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 	<style>
 		/* Pro kutusu sidebar-content dışına alındığında AdminKit varsayılanında taşan kısım kesiliyordu */
 		#sidebar.sidebar {
@@ -31,6 +32,9 @@
 		}
 		#sidebar .sidebar-cta {
 			flex: 0 0 auto;
+		}
+		.min-btn {
+            min-width: 100px;
 		}
 	</style>
 </head>
@@ -53,6 +57,9 @@
 			@include('loyouts.app.footer')
 		</div>
 	</div>
+	@if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
+		@vite(['resources/js/pages/plugins.js'])
+	@endif
 	<script src="/template/static/js/app.js"></script>
 	@yield('js')
 

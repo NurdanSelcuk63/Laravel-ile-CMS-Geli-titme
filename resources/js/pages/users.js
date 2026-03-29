@@ -8,7 +8,7 @@ export class Users {
 
     load() {
         this.events();
-        alert("kullanıcılar yüklendi");
+        $("#usersTable").dataTable();
     }
 
     events() {
