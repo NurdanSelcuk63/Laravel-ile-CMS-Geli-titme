@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Api\AuthApiController;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\pages\UsersController;
 
 Route::get('/', function () {
     if (auth()->check()) {
@@ -20,3 +21,4 @@ Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth')->n
 
 Route::post('/api/login', [AuthApiController::class, 'login']);
 Route::get('/dashboard', [PagesController::class, 'index'])->middleware('auth')->name('dashboard');
+Route::get('/users', [UsersController::class, 'index'])->middleware('auth')->name('users');

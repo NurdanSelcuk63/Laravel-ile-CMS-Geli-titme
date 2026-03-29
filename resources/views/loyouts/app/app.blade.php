@@ -53,8 +53,8 @@
 			@include('loyouts.app.footer')
 		</div>
 	</div>
-
 	<script src="/template/static/js/app.js"></script>
+	@yield('js')
 
 </body>
 

@@ -1,4 +1,5 @@
 import { Login } from "./pages/login.js";
+import { Users } from "./pages/users.js";
 
 export class Loader {
 
@@ -47,8 +48,11 @@ export class Loader {
         switch (ModuleName) {
             case "Login":
                 return new Login();
+                case "Users":
+                    return new Users();
             default:
                 return null;
+           
         }
     };
 

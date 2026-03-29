@@ -59,7 +59,7 @@
             </li>
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="pages-sign-up.html">
+                <a class="sidebar-link" href="{{ route('users') }}">
                     <i class="align-middle" data-feather="users"></i>
                     <span class="align-middle">Kullanıcılar</span>
                 </a>

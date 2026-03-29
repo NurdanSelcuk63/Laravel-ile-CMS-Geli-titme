@@ -10,6 +10,7 @@ export default defineConfig({
                 'resources/js/app.js',
                 'resources/js/pages/plugins.js',
                 'resources/js/pages/login.js',
+                'resources/js/pages/users-entry.js',
             ],
             refresh: true,
         }),
